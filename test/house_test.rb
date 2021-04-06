@@ -3,6 +3,9 @@ require 'minitest/autorun'
 require 'minitest/pride'
 require_relative '../lib/house'
 
+# single test
+# ruby test/house_test.rb --name test_line_1
+
 class HouseTest < Minitest::Test
 
   def test_line_1
