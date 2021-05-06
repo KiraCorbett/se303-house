@@ -1,38 +1,53 @@
-# Then get the "recite" method to pass by doing the most simple thing you can but leveraging your line method. The current implementation doesn't hit the marks for the three qualities of shameless green.
-
 class House
   def line(num)
+    line_of_house = define_house
     case num
     when 1
-      "This is the house that Jack built.\n"
+      line_of_house[0]
     when 2
-      "This is the malt that lay in the house that Jack built.\n"
+      line_of_house[1]
     when 3
-      "This is the rat that ate the malt that lay in the house that Jack built.\n"
+      line_of_house[2]
     when 4
-      "This is the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+      line_of_house[3]
     when 5
-      "This is the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+      line_of_house[4]
     when 6
-      "This is the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+      line_of_house[5]
     when 7
-      "This is the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+      line_of_house[6]
     when 8
-      "This is the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+      line_of_house[7]
     when 9
-      "This is the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+      line_of_house[8]
     when 10
-      "This is the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+      line_of_house[9]
     when 11
-      "This is the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+      line_of_house[10]
     when 12
-      "This is the horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
-    else
-      "nil"
+      line_of_house[11]
     end
   end
 
-  def recite
-    (1..12).collect { |i| line(i) }.join("\n")
+  def recite()
+    lines = define_house
+    lines.join("\n")
+  end
+
+  def define_house
+    house = []
+    house.push("This is the house that Jack built.\n")
+    house.push("This is the malt that lay in the house that Jack built.\n")
+    house.push("This is the rat that ate the malt that lay in the house that Jack built.\n")
+    house.push("This is the cat that killed the rat that ate the malt that lay in the house that Jack built.\n")
+    house.push("This is the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n")
+    house.push("This is the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n")
+    house.push("This is the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n")
+    house.push("This is the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n")
+    house.push("This is the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n")
+    house.push("This is the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n")
+    house.push("This is the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n")
+    house.push("This is the horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n")
+    return house
   end
 end
