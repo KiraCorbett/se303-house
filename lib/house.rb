@@ -3,13 +3,16 @@
 # 2. Find the smallest difference between them.
 # 3. Make the simplest change that will remove that difference.
 
+# ideas: This is the "animal"
+#        This is the "action"
+
 class House
   def line(num)
     case num
     when 1
       "This is #{phrase}"
     when 2
-      "This is the malt that lay in #{phrase}"
+      "#{phrase}"
     when 3
       "This is the rat that ate the malt that lay in #{phrase}"
     when 4
@@ -35,8 +38,13 @@ class House
     end
   end
 
-  def phrase
-    "the house that Jack built.\n"
+  def phrase(num)
+    case num
+    when 2
+      "This is the malt that lay in "
+    else
+      "the house that Jack built.\n"
+    end
   end
 
   def recite
