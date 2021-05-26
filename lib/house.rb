@@ -17,7 +17,7 @@ class House
     elsif number == 2
       "#{line_array(number)}"
     elsif number == 3
-      "the rat that ate the malt that lay in "
+      "#{line_array(number)}"
     elsif number == 4
       "the cat that killed the rat that ate the malt that lay in "
     elsif number == 5
@@ -43,8 +43,9 @@ class House
 
   def line_array(num)
     verses = [
-      "",
+      "the rat that ate ",
       "the malt that lay in ",
+      ""
     ]
     verses.last(num).join("")
   end
