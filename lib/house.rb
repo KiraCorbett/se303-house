@@ -12,8 +12,10 @@ class House
   end
 
   def line_phrase(number)
-    if number == 2
-      "the malt that lay in "
+    if number == 1
+      ""
+    elsif number == 2
+      "#{line_array(number)}"
     elsif number == 3
       "the rat that ate the malt that lay in "
     elsif number == 4
@@ -37,6 +39,14 @@ class House
     else
       ""
     end
+  end
+
+  def line_array(num)
+    verses = [
+      "",
+      "the malt that lay in ",
+    ]
+    verses.last(num).join("")
   end
 
   def recite
