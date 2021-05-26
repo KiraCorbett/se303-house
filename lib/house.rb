@@ -3,45 +3,12 @@
 # 2. Find the smallest difference between them.
 # 3. Make the simplest change that will remove that difference.
 
-# ideas: This is the "animal"
-#        This is the "action"
-
 class House
   def line(num)
-    "This is #{line_phrase(num)}the house that Jack built.\n"
+    "This is #{verse(num)}the house that Jack built.\n"
   end
 
-  def line_phrase(number)
-    if number == 1
-      ""
-    elsif number == 2
-      "#{line_array(number)}"
-    elsif number == 3
-      "#{line_array(number)}"
-    elsif number == 4
-      "#{line_array(number)}"
-    elsif number == 5
-      "#{line_array(number)}"
-    elsif number == 6
-      "#{line_array(number)}"
-    elsif number == 7
-      "#{line_array(number)}"
-    elsif number == 8
-      "#{line_array(number)}"
-    elsif number == 9
-      "#{line_array(number)}"
-    elsif number == 10
-      "#{line_array(number)}"
-    elsif number == 11
-      "#{line_array(number)}"
-    elsif number == 12
-      "#{line_array(number)}"
-    else
-      ""
-    end
-  end
-
-  def line_array(num)
+  def verse(num)
     verses = [
       "the horse and the hound and the horn that belonged to ",
       "the farmer sowing his corn that kept ",
