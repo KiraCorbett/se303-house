@@ -12,9 +12,9 @@ class House
     when 1
       "This is #{phrase}"
     when 2
-      "#{phrase}"
+      "This is #{line_phrase(num)} #{phrase}"
     when 3
-      "This is the rat that ate the malt that lay in #{phrase}"
+      "This is #{line_phrase(num)} #{phrase}"
     when 4
       "This is the cat that killed the rat that ate the malt that lay in #{phrase}"
     when 5
@@ -38,13 +38,18 @@ class House
     end
   end
 
-  def phrase(num)
-    case num
-    when 2
-      "This is the malt that lay in "
+  def line_phrase(number)
+    if number == 2
+      "the malt that lay in"
+    elsif number == 3
+      "the rat that ate the malt that lay in"
     else
-      "the house that Jack built.\n"
+      ""
     end
+  end
+
+  def phrase
+    "the house that Jack built.\n"
   end
 
   def recite
