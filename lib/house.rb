@@ -23,7 +23,7 @@ class House
     elsif number == 5
       "#{line_array(number)}"
     elsif number == 6
-      "the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in "
+      "#{line_array(number)}"
     elsif number == 7
       "the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in "
     elsif number == 8
@@ -43,6 +43,7 @@ class House
 
   def line_array(num)
     verses = [
+      "the cow with the crumpled horn that tossed ",
       "the dog that worried ",
       "the cat that killed ",
       "the rat that ate ",
