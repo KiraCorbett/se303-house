@@ -8,66 +8,39 @@
 
 class House
   def line(num)
-    case num
-    when 1
-      "This is #{phrase}"
-    when 2
-      "This is #{line_phrase(num)} #{phrase}"
-    when 3
-      "This is #{line_phrase(num)} #{phrase}"
-    when 4
-      "This is #{line_phrase(num)} #{phrase}"
-    when 5
-      "This is #{line_phrase(num)} #{phrase}"
-    when 6
-      "This is #{line_phrase(num)} #{phrase}"
-    when 7
-      "This is #{line_phrase(num)} #{phrase}"
-    when 8
-      "This is #{line_phrase(num)} #{phrase}"
-    when 9
-      "This is #{line_phrase(num)} #{phrase}"
-    when 10
-      "This is #{line_phrase(num)} #{phrase}"
-    when 11
-      "This is #{line_phrase(num)} #{phrase}"
-    when 12
-      "This is #{line_phrase(num)} #{phrase}"
-    else
-      "nil"
-    end
+    "This is #{line_phrase(num)}the house that Jack built.\n"
   end
 
   def line_phrase(number)
     if number == 2
-      "the malt that lay in"
+      "the malt that lay in "
     elsif number == 3
-      "the rat that ate the malt that lay in"
+      "the rat that ate the malt that lay in "
     elsif number == 4
-      "the cat that killed the rat that ate the malt that lay in"
+      "the cat that killed the rat that ate the malt that lay in "
     elsif number == 5
-      "the dog that worried the cat that killed the rat that ate the malt that lay in"
+      "the dog that worried the cat that killed the rat that ate the malt that lay in "
     elsif number == 6
-      "the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in"
+      "the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in "
     elsif number == 7
-      "the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in"
+      "the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in "
     elsif number == 8
-      "the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in"
+      "the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in "
     elsif number == 9
-      "the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in"
+      "the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in "
     elsif number == 10
-      "the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in"
+      "the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in "
     elsif number == 11
-      "the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in"
+      "the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in "
     elsif number == 12
-      "the horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in"
+      "the horse and the hound and the horn that belonged to the farmer sowing his corn that kept the rooster that crowed in the morn that woke the priest all shaven and shorn that married the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in "
     else
       ""
     end
   end
 
-  def phrase
-    "the house that Jack built.\n"
+  def new_phrase
+    "This is the house that Jack built.\n"
   end
 
   def recite
