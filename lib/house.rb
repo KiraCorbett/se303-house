@@ -39,10 +39,6 @@ class House
     end
   end
 
-  def new_phrase
-    "This is the house that Jack built.\n"
-  end
-
   def recite
     (1..12).collect { |i| line(i) }.join("\n")
   end
