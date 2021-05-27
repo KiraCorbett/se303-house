@@ -5,15 +5,10 @@
 
 class House
   def line(num)
-    "#{intro} #{verse(num)}the house that Jack built.\n"
+    "#{intro} #{verse.last(num).join("")}the house that Jack built.\n"
   end
 
-  def random
-    random_array = Array.new(12) { rand(1..12) }
-    random_array.collect { |i| line(i) }.join("\n")
-  end
-
-  def verse(num)
+  def verse
     verses = [
       "the horse and the hound and the horn that belonged to ",
       "the farmer sowing his corn that kept ",
@@ -28,7 +23,6 @@ class House
       "the malt that lay in ",
       ""
     ]
-    verses.last(num).join("")
   end
 
   def intro
@@ -45,3 +39,9 @@ class PirateHouse < House
     "Thar be"
   end
 end
+
+# class RandomHouse < House
+#   def line(number)
+#     "#{intro} #{verse(number).sample(number).join(" ")} the house that Jack built.\n"
+#   end
+# end
