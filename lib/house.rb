@@ -8,6 +8,11 @@ class House
     "#{intro} #{verse(num)}the house that Jack built.\n"
   end
 
+  def random
+    random_array = Array.new(12) { rand(1..12) }
+    random_array.collect { |i| line(i) }.join("\n")
+  end
+
   def verse(num)
     verses = [
       "the horse and the hound and the horn that belonged to ",
