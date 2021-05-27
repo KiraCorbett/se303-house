@@ -5,7 +5,7 @@
 
 class House
   def line(num)
-    "This is #{verse(num)}the house that Jack built.\n"
+    "#{intro} #{verse(num)}the house that Jack built.\n"
   end
 
   def verse(num)
@@ -26,7 +26,17 @@ class House
     verses.last(num).join("")
   end
 
+  def intro
+    "This is"
+  end
+
   def recite
     (1..12).collect { |i| line(i) }.join("\n")
+  end
+end
+
+class PirateHouse < House
+  def intro
+    "Thar be"
   end
 end
