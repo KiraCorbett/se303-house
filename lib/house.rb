@@ -47,11 +47,19 @@ class RandomHouse < House
 end
 
 class RandomPirateHouse < House
-  def intro
-    "Thar be"
+  attr_reader :pirate_template
+  attr_reader :random_template
+
+  def initialize(pirate_template: PirateHouse, random_template: RandomHouse)
+    @pirate_template = pirate_template
+    @random_template = random_template
   end
 
-  def line(number)
-    "#{intro} #{verse.sample(number).join(" ")}the house that Jack built.\n"
+  def intro
+    pirate_template.new.intro
   end
+
+  # def line(number)
+  #   "#{intro} #{verse.sample(number).join(" ")}the house that Jack built.\n"
+  # end
 end
