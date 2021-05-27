@@ -98,6 +98,7 @@ This is the horse and the hound and the horn that belonged to the farmer sowing 
   end
 
   puts RandomHouse.new.recite
+  puts RandomPirateHouse.new.recite
 
   def test_pirate_line_1
     expected = "Thar be the house that Jack built.\n"

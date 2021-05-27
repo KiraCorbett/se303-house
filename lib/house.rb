@@ -42,6 +42,16 @@ end
 
 class RandomHouse < House
   def line(number)
-    "#{intro} #{verse.last(number).join(" ")}the house that Jack built.\n"
+    "#{intro} #{verse.sample(number).join(" ")}the house that Jack built.\n"
+  end
+end
+
+class RandomPirateHouse < House
+  def intro
+    "Thar be"
+  end
+
+  def line(number)
+    "#{intro} #{verse.sample(number).join(" ")}the house that Jack built.\n"
   end
 end
