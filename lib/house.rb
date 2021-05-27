@@ -40,8 +40,8 @@ class PirateHouse < House
   end
 end
 
-# class RandomHouse < House
-#   def line(number)
-#     "#{intro} #{verse(number).sample(number).join(" ")} the house that Jack built.\n"
-#   end
-# end
+class RandomHouse < House
+  def line(number)
+    "#{intro} #{verse.last(number).join(" ")}the house that Jack built.\n"
+  end
+end
