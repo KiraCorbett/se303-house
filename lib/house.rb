@@ -59,7 +59,7 @@ class RandomPirateHouse < House
     pirate_template.new.intro
   end
 
-  # def line(number)
-  #   "#{intro} #{verse.sample(number).join(" ")}the house that Jack built.\n"
-  # end
+  def line(number)
+    "#{self.intro} #{verse.sample(number).join(" ")}the house that Jack built.\n"
+  end
 end
